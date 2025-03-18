@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row'
 import Arrays from "../spells/Arrays"
 import Trees from "../spells/Trees"
+import Matrixes from "../spells/Matrixes"
+import DP from "../spells/DP"
 
 export default function Leetcode() {
     return(
@@ -24,8 +26,21 @@ export default function Leetcode() {
             <Trees/>
             </Accordion.Body>
         </Accordion.Item>
+        <Accordion.Item eventKey="2">
+            <Accordion.Header>Matrixes</Accordion.Header>
+            <Accordion.Body>
+            <Matrixes/>
+            </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="3">
+            <Accordion.Header>Dynamic Programming</Accordion.Header>
+            <Accordion.Body>
+            <DP/>
+            </Accordion.Body>
+        </Accordion.Item>
         </Accordion>
         </Container>
+        <Row style={{height: "80vh"}}></Row>
         </div>
     )
 }
