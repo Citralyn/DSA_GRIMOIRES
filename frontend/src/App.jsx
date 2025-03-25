@@ -7,6 +7,7 @@ import MainPage from './pages/MainPage.jsx'
 import Leetcode from './pages/Leetcode.jsx'
 import Codeforces from './pages/Codeforces.jsx'
 import NotFound from './pages/NotFound.jsx'
+import SubmitSpell from "./pages/SubmitSpell.jsx"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route index element={<MainPage />} />
         <Route path="/leetcode" element={<Leetcode />}/>
         <Route path="/codeforces" element={<Codeforces />}/>
+        <Route path="/submit" element={<SubmitSpell />}/>
       </Route>
       
       <Route path="*" element={<NotFound />} />

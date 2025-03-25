@@ -40,7 +40,7 @@ public:
    }
 };
 `,  
-        time: "O(N*W), where N is the length of the string s and W is the number of words in the word_dict (this could be optimized to O(N + W) if the word lengths were hashed beforehand)",
+        time: "O(N*W), where N is the length of the string s and W is the number of words in the word_dict.",
         space: "O(N) for your DP array"
     }
 ]

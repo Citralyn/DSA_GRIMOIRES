@@ -15,6 +15,7 @@ function MainLayout() {
           <Nav style={{float: "right"}}>
             <Nav.Link className='text-light ' href="/leetcode">Leetcode</Nav.Link>
             <Nav.Link className='text-light' href="/codeforces">Codeforces</Nav.Link>
+            <Nav.Link className='text-light' href="/submit">Submit a Spell</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
