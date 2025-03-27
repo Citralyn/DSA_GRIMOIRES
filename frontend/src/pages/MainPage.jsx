@@ -14,7 +14,7 @@ export default function MainPage() {
                     <Col xs={2}>
                     </Col>
                     <Col xs={8}>
-                    <Image className='rounded shadow-lg my-5' fluid src="/Frieren.webp"></Image>
+                    <Image className='special_img rounded shadow-lg my-5' fluid src="/spell_book.png"></Image>
                     </Col>
                     <Col xs={2}>
                     </Col>
