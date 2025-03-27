@@ -29,10 +29,10 @@ export default function Spells({solutions}) {
                 <h1 className='text-center'>#{i + 1}: {sol.title}</h1>
                 <p className='text-center'>{sol.description}</p>
                 <pre className='text-left'>{sol.code}</pre>
-                <Container className='w-75 text-center justify-content-center' >
+                <Container className='w-75 text-center' >
                 <p><b>Time Complexity:</b> {sol.time}</p>
                 <p><b>Space Complexity:</b> {sol.space}</p>
-
+            <div className='d-flex justify-content-center'>
                 <Plot
         data={[
           {
@@ -45,6 +45,7 @@ export default function Spells({solutions}) {
         ]}
         layout={ {width: 640, height: 480, title: {text: 'Time Complexity Graph'}} }
       />
+      </div>
                 </Container>
                 
             </Container>
