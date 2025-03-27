@@ -69,6 +69,7 @@ int main()
 
 `,  
         time: "O(N). You iterate through the array twice, adjusting elements in constant time if needed.",
+        timeComp: "x",
         space: "O(N) for storing the input in a vector"
     },
     {
@@ -148,6 +149,7 @@ int main()
 
 `,  
         time: "O(N), you iterate through the array a few times.",
+        timeComp: "x",
         space: "O(N) for storing the input in a vector"
     }
 ]

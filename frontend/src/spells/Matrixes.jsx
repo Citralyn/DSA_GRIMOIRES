@@ -103,6 +103,7 @@ public:
 };
 `,  
         time: "O(N*M) -> N is the number of rows, M is the number of columns, doing this iteration twice ",
+        timeComp: "x",
         space: "O(1) -> Board is modified in place "
     }
 ]

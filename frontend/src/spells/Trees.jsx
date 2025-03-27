@@ -31,6 +31,7 @@ public:
 };
 `,  
         time: "O(N) -> we visit each node once ",
+        timeComp: "x",
         space: "Depends on the number of function calls (the memory it takes up on the call stack). In this case it would be O(H) where H is the height of the tree."
     },
     {
@@ -62,6 +63,7 @@ public:
 };
 `,  
         time: "O(N) -> worst case, we search the entire tree",
+        timeComp: "x",
         space: "O(H) -> The memory space for this problem is determined by the max number of function calls on the call stack, which is limited by the height of the tree (H). H could be as big as N, potentially."
     }
 ]

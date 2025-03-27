@@ -41,6 +41,7 @@ public:
 };
 `,  
         time: "O(N*W), where N is the length of the string s and W is the number of words in the word_dict.",
+        timeComp: "x^2",
         space: "O(N) for your DP array"
     }
 ]

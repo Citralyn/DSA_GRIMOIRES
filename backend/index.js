@@ -20,17 +20,11 @@ app.use(express.json());
 
 app.post('/submitSpell', (req, res) => {
     console.log(req.body); 
-    res.send("YAY"); 
 
 
-    db.query("SELECT * FROM temp_spells WHERE title = 'a';").then((data) => {
-        console.log('DATA:', data);
-      })
-      .catch((error) => {
-        console.log('ERROR:', error)
-      })
 
 
+  // create table 
     db.query("CREATE TABLE IF NOT EXISTS temp_spells (\
 spell_id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY, \
 title varchar(255) NOT NULL, \
@@ -47,6 +41,15 @@ image_url varchar(255))"
         console.log('ERROR:', error)
       })
 
+    // show all existing spells
+      db.query("SELECT * FROM temp_spells WHERE spell_id >= 1;").then((data) => {
+        console.log('DATA:', data);
+      })
+      .catch((error) => {
+        console.log('ERROR:', error)
+      })
+
+    // insert new spell
     db.query("INSERT INTO temp_spells (title, description, time_complexity,\
          time_complexity_description, space_complexity,\
           space_complexity_description, image_url) VALUES ($1, $2, $3, $4, $5, $6, $7)",

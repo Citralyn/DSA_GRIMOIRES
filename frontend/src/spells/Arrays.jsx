@@ -27,6 +27,7 @@ public:
 };
 `,  
         time: "O(N) -> Modding k by n is a constant time operation, and we call std::reverse (an O(N) operation) 3 times.",
+        timeComp: "x",
         space: "O(1) -> std::reverse modifies the original array directly (in-place)"
     },
     {
@@ -55,6 +56,7 @@ public:
 };
 `,  
         time: "O(N) -> We are iterating through the array once.",
+        timeComp: "x",
         space: "O(1) -> No extra data structures are needed."
     }
 ]
