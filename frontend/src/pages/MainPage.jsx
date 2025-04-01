@@ -14,7 +14,7 @@ export default function MainPage() {
                     <Col xs={2}>
                     </Col>
                     <Col xs={8}>
-                    <Image className='special_img rounded shadow-lg my-5' fluid src="/spell_book.png"></Image>
+                    <Image className='special_img rounded shadow-lg my-5' fluid src="/grimoire_logo.png"></Image>
                     </Col>
                     <Col xs={2}>
                     </Col>
@@ -36,27 +36,3 @@ export default function MainPage() {
         </Container>
     )
 }
-
-/*
-                <Container>
-                <Row className='justify-content-center align-items-center'>
-                    <Col xs={2}>
-                    <Container className='text-center'>
-                    <a className='icon-link' href='/leetcode'>
-                        <i className="bi bi-arrow-left-square-fill h1"></i>
-                    </a>
-                    </Container>
-                    </Col>
-                    <Col xs={8}>
-                    <Image className='rounded shadow-lg my-5' fluid src="/Frieren.webp"></Image>
-                    </Col>
-                    <Col xs={2}>
-                    <Container className='justify-content-center text-center'>
-                    <a className='icon-link' href='/leetcode'>
-                        <i className="bi bi-arrow-right-square-fill h1"></i>
-                    </a>
-                    </Container>
-                    </Col>
-                </Row>
-                </Container>
-*/
