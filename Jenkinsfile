@@ -2,12 +2,15 @@ pipeline {
     agent {
         docker {
             image 'node:24.11.1-alpine3.22'
+            args '-u $(id -u):$(id -g)'
         }
     }
 
     environment {
         DISABLE_AUTH = 'true'
         DB_ENGINE    = 'sqlite'
+        NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
+    }
     }
 
     stages {
@@ -16,7 +19,12 @@ pipeline {
                 echo "Database engine is ${DB_ENGINE}"
                 echo "DISABLE_AUTH is ${DISABLE_AUTH}"
                 sh 'printenv'
-                sh 'cd frontend && npm install'
+                sh '''
+                    cd frontend
+                    rm -rf node_modules package-lock.json
+                    npm install --legacy-peer-deps
+                    npm run build
+                '''
             }
         }
 
