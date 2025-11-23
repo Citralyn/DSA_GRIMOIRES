@@ -11,7 +11,6 @@ pipeline {
         DB_ENGINE    = 'sqlite'
         NPM_CONFIG_CACHE = "${WORKSPACE}/.npm"
     }
-    }
 
     stages {
         stage('Install Frontend Dependencies') {
